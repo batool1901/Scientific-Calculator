@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Scientific Calculator</h1>
+    <div class="theme-toggle">
+      <label>
+        <input type="checkbox" id="themeToggle">
+        Dark Mode
+      </label>
+    </div>
+    <input type="text" id="display" readonly />
+    <div class="buttons">
+      <!-- Buttons -->
+      <button onclick="append('7')">7</button>
+      <button onclick="append('8')">8</button>
+      <button onclick="append('9')">9</button>
+      <button onclick="calculate()" class="equalsTo">=</button>
+      
+      <button onclick="append('4')">4</button>
+      <button onclick="append('5')">5</button>
+      <button onclick="append('6')">6</button>
+      <button onclick="clearDisplay()">C</button>
+
+      <button onclick="append('1')">1</button>
+      <button onclick="append('2')">2</button>
+      <button onclick="append('3')">3</button>
+      <button onclick="append('+')">+</button>
+
+      <button onclick="append('0')">0</button>
+      <button onclick="append('00')">00</button>
+      <button onclick="append('.')">.</button>
+      <button onclick="append('-')">-</button>
+      
+      <button onclick="append('Math.sin(')">sin</button>
+      <button onclick="append('Math.cos(')">cos</button>
+      <button onclick="append('Math.tan(')">tan</button>
+      <button onclick="append('*')">*</button>
+      
+      <button onclick="append('Math.pow(')">^</button>
+      <button onclick="append('Math.log(')">log</button>
+      <button onclick="append('Math.sqrt(')">√</button>
+      <button onclick="append('/')">/</button>
+    </div> 
+
+    <h2>History</h2>
+    <ul id="history"></ul>
+    <button onclick="clearHistory()" class="clear-history">Clear History</button>
+  </div>
+  <div class="footer">
+  MADE BY @BATOOL FATIMA.
+</div>
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>
